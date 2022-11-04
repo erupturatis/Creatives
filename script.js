@@ -73,7 +73,6 @@ window.addEventListener("load", function () {
       window.addEventListener("mousemove", (event) => {
         this.mouse.x = event.x;
         this.mouse.y = event.y;
-        console.log(`${event.x} and ${event.y}`);
       });
       this.methods = {
         warp: this.warp.bind(this),
