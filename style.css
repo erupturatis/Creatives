@@ -5,16 +5,28 @@
 
 #canvas1{
   position: absolute;
+  border: solid;
+
+  height: inherit;
 
 }
-
+#warpButton{
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+}
 .controls {
+  /* position: absolute; */
   position: absolute;
   z-index: 100;
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
+
   z-index: 100;
+  border: solid;
+}
+
+.FlexEq {
+  ;
 }
 
 img {
