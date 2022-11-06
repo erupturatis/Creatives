@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
@@ -7,26 +8,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-    <canvas id="canvas1"></canvas>
-    <img id = "image1" src="">
-     <div class="controls">
-      <button id="warpButton">Warp</button>
+  <canvas id="canvas1"></canvas>
+  <img id="image1" src="">
+  <div class="controls">
+    <button id="warpButton">Warp</button>
+    <div>
+
+      <div class="marginleft">radius</div>
       <div class="range">
         <div class="field">
-          
-          <input id = 'inputSlider' type="range" min="0" max="100">
+          <div class="inputSlider">
+            <input id='radiusSlider' step="10" type="range" min="0" max="20000">
+          </div>
           <div class="FlexEq">
             <div class="value left">0</div>
-            <div class="value right">100</div>
+            <div class="value right">20000</div>
           </div>
-          
+
+        </div>
+        <div>
+          <input type="text" id="radiusInput" class="stinput">
         </div>
       </div>
+
+      <div class="marginleft">ease</div>
+      <div class="range">
+        <div class="field">
+          <div class="inputSlider">
+            <input id='easeSlider' step="0.01" type="range" min="0" max="1">
+          </div>
+          <div class="FlexEq">
+            <div class="value left">0</div>
+            <div class="value right">1</div>
+          </div>
+
+        </div>
+        <div>
+          <input type="text" id="easeInput" class="stinput">
+        </div>
+      </div>
+
+
+
     </div>
-    
+
+  </div>
+  </div>
+
   <script src="injectSrc.js"></script>
-  <script src="script.js"></script>
-  <script src="manageValues.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="manageValues.js"></script>
 </body>
-</html> 
+
+</html>

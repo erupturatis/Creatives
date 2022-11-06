@@ -5,8 +5,6 @@
 
 #canvas1{
   position: absolute;
-  border: solid;
-
   height: inherit;
 
 }
@@ -16,17 +14,39 @@
   height: 50px;
   border-radius: 100px;
 }
+.inputSlider{
+  
+  display: inline;
+ 
+}
 .controls {
   /* position: absolute; */
   position: absolute;
   z-index: 100;
-
-  z-index: 100;
-  border: solid;
 }
 
-.FlexEq {
-  ;
+.field{
+ 
+  display: inline-block;
+  
+}
+.marginleft{
+  margin-left: 20px;
+}
+
+.FlexEq{
+  display: flex;
+  justify-content: space-between;
+}
+.stinput{
+  width: 50px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.range{
+  display: flex;
+  margin: 20px;
+  margin-top: 5px;
 }
 
 img {
